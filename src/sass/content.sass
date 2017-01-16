@@ -1,1 +1,136 @@
 /* from content.sass */
+
+.intro
+  text-align: center
+  width: 100%
+  margin-top: -66px
+  background: url(../img/nature.png) no-repeat 0 0
+  background-size: cover
+  &__inner
+     background-color: rgba(#fff, 0.85)
+     padding: 223px 0 427px
+  &__small-text
+    background-color: $secondary-color
+    font-family: $font-bold
+    text-transform: uppercase
+    display: inline-block
+    padding: 2px 19px
+  &__heading
+    display: inline-block
+    border: 10px solid $primary-color
+    font-family: $font-bold
+    font-size: em(48)
+    text-transform: uppercase
+    padding: 0 35px
+  &__description
+    display: inline-block
+    font-size: em(15)
+    max-width: 542px
+    font-family: $font-light
+    margin-top: 25px
+
+.history
+  margin-top: -300px
+  &__image
+    background: url(../img/furniture-1.png) no-repeat 0 0
+    height: 400px
+
+.agency-history
+  &__title
+    font-size: em(30)
+    text-transform: uppercase
+    font-weight: 700
+    margin-top: 17px
+    position: relative
+    z-index: 1
+    &::before
+      position: absolute
+      content: ""
+      width: 67px
+      height: 21px
+      background-color: $secondary-color
+      left: 2px
+      top: 22px
+      z-index: -1
+  &__description
+    font-family: $font-light
+    font-size: em(15)
+    margin-top: 7px
+    line-height: 30px
+  &__special
+    float: right
+    background-color: $secondary-color
+    text-decoration: none
+    text-transform: uppercase
+    color: #fff
+    font-size: em(14)
+    font-weight: 700
+    padding: 14px 39px
+    margin-top: 20px
+
+.services
+  margin-top: 138px
+  text-align: center
+  &__title
+    display: inline-block
+    font-size: em(30)
+    text-transform: uppercase
+    font-weight: 700
+    position: relative
+    z-index: 1
+    &::before
+      position: absolute
+      content: ""
+      width: 67px
+      height: 21px
+      background-color: $secondary-color
+      left: 2px
+      top: 22px
+      z-index: -1
+  &__subheading-text
+    display: inline-block
+    font-size: em(14)
+    font-family: $font-light
+    max-width: 717px
+    margin-top: 15px
+  &__image
+    height: 500px
+    background: url(../img/furniture-2.png) no-repeat 0 0
+
+.services-items
+  margin-top: 163px
+  &__item
+    padding-top: 61px
+    text-align: left
+    padding-left: 0
+    padding-right: 0
+  .item
+    position: relative
+    margin-bottom: 35px
+    &__heading
+      font-size: em(18)
+      font-weight: 700
+      text-transform: uppercase
+    &__option
+      font-family: $font-light
+      text-transform: uppercase
+      font-size: em(14)
+      color: #999
+      margin-top: 10px
+    &__icon-1,
+    &__icon-2,
+    &__icon-3,
+    &__icon-4
+      position: absolute
+      content: ""
+      top: 20px
+      left: 0
+      width: 32px
+      height: 32px
+      background: url(../img/services-icons.png) no-repeat 0 0
+    &__icon-2
+      background-position: -325px 0
+    &__icon-3
+      background-position: 0 -250px
+    &__icon-4
+      background-position: -325px -250px

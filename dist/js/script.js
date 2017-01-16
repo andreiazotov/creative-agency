@@ -1,1 +1,3 @@
-/* compressed js */
+/* from common.js */
+
+/* from libs.js */

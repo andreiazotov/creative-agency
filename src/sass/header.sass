@@ -1,1 +1,38 @@
 /* from header.sass */
+.page-header
+  padding-top: 35px
+  line-height: 30px
+  &__logo
+    float: left
+    font-size: em(18)
+    text-decoration: none
+    color: $primary-color
+    text-transform: uppercase
+    font-weight: 700
+  &__menu
+    float: right
+
+.top-menu
+  font-size: em(12)
+  text-transform: uppercase
+  &__item
+    font-family: $font-bold
+    font-size: em(15)
+    text-decoration: none
+    color: $primary-color
+    position: relative
+    &:not(:last-child)
+      margin-right: 20px
+    &::after
+      position: absolute
+      content: ""
+      height: 1px
+      width: 50%
+      background-color: $primary-color
+      top: 10px
+      left: 0
+      opacity: 0
+      transition: 0.4s
+    &:hover::after
+      top: -10px
+      opacity: 1
