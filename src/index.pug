@@ -86,7 +86,7 @@ html(lang='en')
             .col-lg-5.col-lg-offset-1.services__image
       section.portfolio
         .container
-          h2.portfolio__title our portfolio
+          div: h2.portfolio__title our portfolio
           p.portfolio__subheading-text Lorem ipsum dolor sit amet, consectetur
             | adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             | dolore magna aliqua.
@@ -94,7 +94,7 @@ html(lang='en')
             .col-lg-3.portfolio__categories.categories
               h4.categories__title choose category
               ul.categories__filter
-                li: a(href="#").all all
+                li: a(href="#").all.active all
                 li: a(href="#").webdesign webdesign
                 li: a(href="#").graphic-design graphic design
                 li: a(href="#").fashion fashion
@@ -104,49 +104,52 @@ html(lang='en')
               .row
                 .col-lg-4
                   a(href="#").portfolio-items__item_item-1
-                    img(src="#" alt="portfolio")
-                    p creative
-                    p webdesign
+                    img(src="img/portfolio-1.png" alt="portfolio")
+                    .content-wrapper
+                      p creative
+                      p webdesign
+                  a(href="#").portfolio-items__item_item-4
+                    img(src="img/portfolio-4.png" alt="portfolio")
+                    .content-wrapper
+                      p creative
+                      p webdesign
+                  a(href="#").portfolio-items__item_item-7
+                    img(src="img/portfolio-7.png" alt="portfolio")
+                    .content-wrapper
+                      p creative
+                      p webdesign
                 .col-lg-4
                   a(href="#").portfolio-items__item_item-2
-                    img(src="#" alt="portfolio")
-                    p creative
-                    p webdesign
+                    img(src="img/portfolio-2.png" alt="portfolio")
+                    .content-wrapper
+                      p creative
+                      p webdesign
+                  a(href="#").portfolio-items__item_item-5
+                    img(src="img/portfolio-5.png" alt="portfolio")
+                    .content-wrapper
+                      p creative
+                      p webdesign
+                  a(href="#").portfolio-items__item_item-8
+                    img(src="img/portfolio-8.png" alt="portfolio")
+                    .content-wrapper
+                      p creative
+                      p webdesign
                 .col-lg-4
                   a(href="#").portfolio-items__item_item-3
-                    img(src="#" alt="portfolio")
-                    p creative
-                    p webdesign
-                .col-lg-4
-                  a(href="#").portfolio-items__item_item-4
-                    img(src="#" alt="portfolio")
-                    p creative
-                    p webdesign
-                .col-lg-4
-                  a(href="#").portfolio-items__item_item-5
-                    img(src="#" alt="portfolio")
-                    p creative
-                    p webdesign
-                .col-lg-4
+                    img(src="img/portfolio-3.png" alt="portfolio")
+                    .content-wrapper
+                      p creative
+                      p webdesign
                   a(href="#").portfolio-items__item_item-6
-                    img(src="#" alt="portfolio")
-                    p creative
-                    p webdesign
-                .col-lg-4
-                  a(href="#").portfolio-items__item_item-7
-                    img(src="#" alt="portfolio")
-                    p creative
-                    p webdesign
-                .col-lg-4
-                  a(href="#").portfolio-items__item_item-8
-                    img(src="#" alt="portfolio")
-                    p creative
-                    p webdesign
-                .col-lg-4
+                    img(src="img/portfolio-6.png" alt="portfolio")
+                    .content-wrapper
+                      p creative
+                      p webdesign
                   a(href="#").portfolio-items__item_item-9
-                    img(src="#" alt="portfolio")
-                    p creative
-                    p webdesign
+                    img(src="img/portfolio-9.png" alt="portfolio")
+                    .content-wrapper
+                      p creative
+                      p webdesign
       section.newsletter
         .container
           .row
@@ -155,7 +158,7 @@ html(lang='en')
                 h2.newsletter-text__heading you think we're cool? let's work together
                 a(href="#").newsletter-text__special get in touch
             .col-lg-6
-              .newsletter__form.newsletter-form
+              form.newsletter__form.newsletter-form
                 h2.newsletter-form__heading stay inform with our newsletter
                 p.newsletter-form__text Lorem ipsum dolor sit amet, consectetur
                   | adipisicing elit, sed do eiusmod tempor incididunt ut labore
