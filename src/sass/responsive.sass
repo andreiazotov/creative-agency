@@ -1,4 +1,111 @@
 /* from responsive.sass */
-@media screen and (max-width: 1920px)
-  .page-wrapper
-    padding: 0
+@media screen and (max-width: 1200px)
+  .history
+    margin-top: -1px
+    &__image
+      background-size: cover
+
+  .services
+    &__image
+      background-size: cover
+
+  .services-items
+    margin-top: 50px
+    .item
+      text-align: center
+      &__icon-1,
+      &__icon-2,
+      &__icon-3,
+      &__icon-4
+        position: static
+        display: inline-block
+
+  .categories
+    text-align: center
+    &__filter
+      margin-bottom: 20px
+      li
+        a
+          margin-left: 0
+
+  .page-footer
+    .copyrights
+      text-align: right
+    .bottom-menu
+      &__item
+        &:not(:last-child)
+          margin-right: 15px
+
+@media screen and (max-width: 991px)
+  .top-menu
+    display: none
+
+  .history
+    text-align: center
+    &__text
+      margin-top: 30px
+
+  .agency-history
+    &__title
+      display: inline-block
+
+  .intro
+    &__inner
+       background-color: rgba(#fff, 0.85)
+       padding: 223px 0 223px
+
+  .services-items
+    .item
+      &__icon-1,
+      &__icon-2,
+      &__icon-3,
+      &__icon-4
+        left: 360px
+
+  .portfolio-items
+    a
+      margin: 0 53px
+
+
+  .newsletter-form
+    margin-top: 40px
+
+  .page-footer
+    text-align: center
+    .copyrights
+      margin-top: 20px
+      text-align: center
+      &__links
+        float: none
+        text-align: center
+
+@media screen and (max-width: 500px)
+  .intro
+    &__heading
+      padding: 0
+
+  .portfolio-items
+    a
+      margin: 0
+
+  .page-footer
+    .bottom-menu
+      &__item
+        display: block
+        &:not(:last-child)
+          margin-right: 0
+
+@media screen and (max-width: 430px)
+  .intro
+    &__description
+      width: 90%
+      margin: 0 auto
+  .newsletter-form
+    &__field
+      width: 100%
+
+
+@media screen and (max-width: 370px)
+  .agency-history
+    &__title::before
+      display: none
