@@ -1,5 +1,7 @@
 /* from content.sass */
 
+/* HOME PAGE STYLES START */
+
 .intro
   text-align: center
   width: 100%
@@ -285,3 +287,211 @@
     text-transform: uppercase
     color: #fff
     padding: 15px 48px 12px 48px
+
+/* HOME PAGE STYLES END */
+
+
+
+
+
+/* SERVICES PAGE STYLES START */
+
+.top
+  text-align: center
+  padding: 252px 0 158px
+  background: url(../img/layer-4.png) no-repeat 0 0
+  background-size: cover
+  margin-top: -66px
+  &__heading
+    text-transform: uppercase
+    font-weight: 700
+    font-size: em(36)
+  &__text
+    text-transform: uppercase
+    font-weight: 700
+    font-size: em(14)
+    margin-top: 6px
+
+.advantages
+  text-align: center
+  padding: 121px 0 150px
+  &__image
+    display: inline-block
+    max-width: 530px
+  &__title
+    display: inline-block
+    font-size: em(30)
+    text-transform: uppercase
+    font-weight: 700
+    margin-top: 17px
+    position: relative
+    z-index: 1
+    &::before
+      position: absolute
+      content: ""
+      width: 67px
+      height: 21px
+      background-color: $secondary-color
+      left: 2px
+      top: 22px
+      z-index: -1
+  &__description
+    font-family: $font-light
+    font-size: em(15)
+    margin-top: 7px
+    max-width: 717px
+    display: inline-block
+    margin-bottom: 93px
+
+.features
+  text-align: left
+  font-family: $font-light
+  font-size: em(15)
+  line-height: 30px
+  margin-top: -9px
+  &__introduction
+    margin-bottom: 30px
+  &__list
+    padding-left: 35px
+    p
+      margin-bottom: 5px
+      position: relative
+      &::before
+        position: absolute
+        content: ""
+        width: 12px
+        height: 12px
+        background: url(../img/yes-icon.png) no-repeat 0 0
+        left: -20px
+        top: 8px
+
+.ideas
+  text-align: center
+  padding-bottom: 143px
+
+.idea-item
+  &__logo
+    display: inline-block
+    background: url(../img/idea-icons.png) no-repeat
+    position: relative
+    margin-bottom: 13px
+    &::before
+      position: absolute
+      content: ""
+      width: 50px
+      height: 20px
+      background-color: $secondary-color
+      left: -5px
+      top: 30px
+      z-index: -1
+  &__logo_logo-1
+    width: 53px
+    height: 53px
+    background-position: 0 0
+  &__logo_logo-2
+    width: 53px
+    height: 53px
+    background-position: -293px 0
+  &__logo_logo-3
+    width: 53px
+    height: 53px
+    background-position: -585px 0
+  &__logo_logo-4
+    width: 53px
+    height: 53px
+    background-position: -878px 0
+  &__title
+    text-transform: uppercase
+    font-weight: 700
+    font-size: em(18)
+  &__description
+    font-family: $font-light
+    font-size: em(14)
+    margin-top: 7px
+    line-height: 30px
+
+.pricing
+  text-align: center
+  padding: 0 0 150px 0
+  &__title
+    display: inline-block
+    font-size: em(30)
+    text-transform: uppercase
+    font-weight: 700
+    margin-top: 17px
+    position: relative
+    z-index: 1
+    &::before
+      position: absolute
+      content: ""
+      width: 67px
+      height: 21px
+      background-color: $secondary-color
+      left: 2px
+      top: 22px
+      z-index: -1
+  &__description
+    font-family: $font-light
+    font-size: em(15)
+    margin-top: 7px
+    max-width: 717px
+    display: inline-block
+    margin-bottom: 93px
+
+.pricing-item
+  text-align: left
+  border-top: 5px solid $secondary-color
+  box-sizing: border-box
+  padding: 23px 0 40px 30px
+  transition: 0.4s
+  position: relative
+  overflow: hidden
+  &:hover
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.25)
+  &::after
+    position: absolute
+    content: ""
+    width: 15px
+    height: 15px
+    background-color: $secondary-color
+    right: -7px
+    top: -10px
+    transform: rotate(45deg)
+  &__title
+    text-transform: uppercase
+    font-size: em(30)
+    font-weight: 700
+  &__price
+    color: #fff
+    text-transform: uppercase
+    font-weight: 700
+    font-size: em(14)
+    background-color: $secondary-color
+    padding: 5px 20px
+    margin-top: 3px
+    margin-bottom: 22px
+    display: inline-block
+  &__feature
+    margin-top: 12px
+    font-family: $font-light
+    font-size: em(15)
+    padding-left: 20px
+    position: relative
+    &::before
+      position: absolute
+      content: ""
+      width: 12px
+      height: 12px
+      background: url(../img/yes-icon.png) no-repeat 0 0
+      left: 0px
+      top: 6px
+  &__buy-button
+    margin-top: 47px
+    font-size: em(14)
+    color: #fff
+    background-color: $secondary-color
+    display: inline-block
+    text-transform: uppercase
+    padding: 10px 20px
+    text-decoration: none
+/* SERVICES PAGE STYLES END */

@@ -66,6 +66,8 @@
     a
       margin: 0 53px
 
+  .idea-item
+    margin-top: 40px
 
   .newsletter-form
     margin-top: 40px
@@ -78,6 +80,11 @@
       &__links
         float: none
         text-align: center
+
+@media screen and (max-width: 560px)
+  .advantages
+    &__image
+      display: none
 
 @media screen and (max-width: 500px)
   .intro
@@ -94,6 +101,13 @@
         display: block
         &:not(:last-child)
           margin-right: 0
+
+  .features
+    &__list
+      p
+        line-height: 20px
+        &::before
+          top: 3px
 
 @media screen and (max-width: 430px)
   .intro

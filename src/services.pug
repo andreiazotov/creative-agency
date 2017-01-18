@@ -1,0 +1,107 @@
+doctype html
+html(lang='en')
+  //- INCLUDE HEAD
+  include pug/head.pug
+  body
+    .page-wrapper
+      //- INCLUDE HEADER
+      include pug/header.pug
+      section.top
+        h2.top__heading our services
+        p.top__text home / services
+      section.advantages
+        .container
+          div: h2.advantages__title what we do
+          div: p.advantages__description Lorem ipsum dolor sit amet, consectetur
+            | adipisicing elit, sed do eiusmod tempor incididunt
+            | ut labore et dolore magna aliqua.
+          .row
+            .col-md-6.advantages__features.features
+              .row
+                .col-md-12
+                  p.features__introduction Erat volutpat. Ut wisi enim ad minim
+                    | veniam, quis nostrud exerci tation ullamcorper suscipit
+                    | lobortis nisl ut aliquip ex ea commodo consequat. Duis
+                    | autem vel eum iriure dolor in hendrerit in vulputate velit
+                    | esse molestie consequat, vel illum dolore eu feugiat nulla
+                    | facilisis at vero eros et accumsan.
+              .row
+                .col-md-5.col-xs-5.features__list
+                  p Stunning on all screens
+                  p Easy to customize
+                  p Make a difference
+                  p Imagine and create
+                  p Unlimited possibilities
+                .col-md-6.col-xs-5.features__list.col-md-offset-1.col-xs-offset-1
+                  p Remarkable style
+                  p Captivating presentations
+                  p Make your portfolio pop
+                  p Words that matter
+                  p Satisfied clients
+            .col-md-6
+              img(src="img/services-2.png" alt="services").advantages__image
+      section.ideas
+        .container
+          .row
+            .col-md-3.ideas__item.idea-item
+              .idea-item__logo.idea-item__logo_logo-1
+              h4.idea-item__title keep pulse going
+              p.idea-item__description Lorem ipsum dolor sit amet, consectetur
+                | adipisicing elit, sed do eiusmod tempor incididunt.
+            .col-md-3.ideas__item.idea-item
+              .idea-item__logo.idea-item__logo_logo-2
+              h4.idea-item__title pass the limits
+              p.idea-item__description Lorem ipsum dolor sit amet, consectetur
+                | adipisicing elit, sed do eiusmod tempor incididunt.
+            .col-md-3.ideas__item.idea-item
+              .idea-item__logo.idea-item__logo_logo-3
+              h4.idea-item__title great ideas
+              p.idea-item__description Lorem ipsum dolor sit amet, consectetur
+                | adipisicing elit, sed do eiusmod tempor incididunt.
+            .col-md-3.ideas__item.idea-item
+              .idea-item__logo.idea-item__logo_logo-4
+              h4.idea-item__title awesome support
+              p.idea-item__description Lorem ipsum dolor sit amet, consectetur
+                | adipisicing elit, sed do eiusmod tempor incididunt.
+      section.pricing
+        .container
+          div: h2.pricing__title pricing plans
+          div: p.pricing__description Lorem ipsum dolor sit amet, consectetur
+            | adipisicing elit, sed do eiusmod tempor incididunt
+            | ut labore et dolore magna aliqua.
+          .row
+            .col-md-4.col-sm-4.pricing__item
+              .pricing-item
+                h3.pricing-item__title basic
+                p.pricing-item__price $35.99 monthly
+                p.pricing-item__feature Lorem ipsum dolor sit amet
+                p.pricing-item__feature Consectetuer adipiscing elit
+                p.pricing-item__feature Sed diam nonummy
+                p.pricing-item__feature Nibh euismod tincidunt
+                p.pricing-item__feature Ut laoreet dolore
+                p.pricing-item__feature Magna aliquam erat volutpat
+                a(href="#").pricing-item__buy-button get started
+            .col-md-4.col-sm-4.pricing__item
+              .pricing-item
+                h3.pricing-item__title advanced
+                p.pricing-item__price $35.99 monthly
+                p.pricing-item__feature Lorem ipsum dolor sit amet
+                p.pricing-item__feature Consectetuer adipiscing elit
+                p.pricing-item__feature Sed diam nonummy
+                p.pricing-item__feature Nibh euismod tincidunt
+                p.pricing-item__feature Ut laoreet dolore
+                p.pricing-item__feature Magna aliquam erat volutpat
+                a(href="#").pricing-item__buy-button get started
+            .col-md-4.col-sm-4.pricing__item
+              .pricing-item
+                h3.pricing-item__title smart
+                p.pricing-item__price $35.99 monthly
+                p.pricing-item__feature Lorem ipsum dolor sit amet
+                p.pricing-item__feature Consectetuer adipiscing elit
+                p.pricing-item__feature Sed diam nonummy
+                p.pricing-item__feature Nibh euismod tincidunt
+                p.pricing-item__feature Ut laoreet dolore
+                p.pricing-item__feature Magna aliquam erat volutpat
+                a(href="#").pricing-item__buy-button get started
+      //- INCLUDE FOOTER
+      include pug/footer.pug

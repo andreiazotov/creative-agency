@@ -20,14 +20,15 @@ var path = {
         fonts: "dist/fonts/"
     },
     src: {
-        pug:    "src/index.pug",
+        pug:    "src/*.pug",
         styles: "src/sass/main.sass",
         js:     "src/js/*.js",
         img:    "src/img/*.*",
         fonts:  "src/fonts/*.*"
     },
     watch: {
-        pug:    "src/index.pug",
+        pug_includes: "src/pug/*.pug",
+        pug:    "src/*.pug",
         styles: "src/sass/*.sass",
         js:     "src/js/*.js",
         images: "src/img/*.*"
@@ -36,7 +37,7 @@ var path = {
 
 gulp.task("gulp:connect", function() {
     connect.server({
-        root: "build",
+        root: "dist",
         livereload: true
     });
 });
@@ -44,7 +45,8 @@ gulp.task("gulp:connect", function() {
 gulp.task("gulp:html", function() {
     gulp.src(path.src.pug)
     .pipe(pug())
-    .pipe(gulp.dest(path.build.html));
+    .pipe(gulp.dest(path.build.html))
+    .pipe(connect.reload());
 });
 
 gulp.task("gulp:css", function() {
@@ -53,13 +55,15 @@ gulp.task("gulp:css", function() {
     .pipe(autoprefixer("last 2 versions", ">1%", "ie9"))
     .pipe(minifyCss({compatibility: "ie8"}))
     .pipe(rename("styles.css"))
-    .pipe(gulp.dest(path.build.css));
+    .pipe(gulp.dest(path.build.css))
+    .pipe(connect.reload());
 });
 
 gulp.task("gulp:js", function() {
     gulp.src(path.src.js)
     .pipe(concatJs("script.js"))
-    .pipe(gulp.dest(path.build.js));
+    .pipe(gulp.dest(path.build.js))
+    .pipe(connect.reload());
 });
 
 gulp.task("gulp:images", function() {
@@ -74,6 +78,7 @@ gulp.task("gulp:fonts", function() {
 });
 
 gulp.task("gulp:watch", function() {
+    gulp.watch(path.watch.pug_includes, ["gulp:html"]);
     gulp.watch(path.watch.pug, ["gulp:html"]);
     gulp.watch(path.watch.styles, ["gulp:css"]);
     gulp.watch(path.watch.js, ["gulp:js"]);
