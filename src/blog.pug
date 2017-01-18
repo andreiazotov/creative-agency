@@ -1,0 +1,117 @@
+doctype html
+html(lang='en')
+  //- INCLUDE HEAD
+  include pug/head.pug
+  body
+    .page-wrapper
+      //- INCLUDE HEADER
+      include pug/header.pug
+      section.top
+        h2.top__heading blog posts
+        p.top__text home / blog
+      section.blog
+        .container
+          .row
+            .col-md-8
+              .blog__posts-list.posts-list
+                .posts-list__item.post
+                  img(src="img/post-image-1.png" alt="post").post__image
+                  p.post__date ocotber 13, 2015
+                  p.post__title the big leagues our turn straightnin
+                  p.post__preview-text Lorem ipsum dolor sit amet, consectetur
+                    | adipisicing elit, sed do eiusmod tempor incididunt ut
+                    | labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    | quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    | ex ea commodo consequat. Duis aute irure dolor in
+                    | reprehenderit in voluptate velit esse cillum dolore eu
+                    | fugiat nulla pariatur.
+                  a(href="#").post__full-text-link continue reading...
+                .posts-list__item.post
+                  img(src="img/post-image-1.png" alt="post").post__image
+                  p.post__date ocotber 13, 2015
+                  p.post__preview-text Lorem ipsum dolor sit amet, consectetur
+                    | adipisicing elit, sed do eiusmod tempor incididunt ut
+                    | labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    | quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    | ex ea commodo consequat. Duis aute irure dolor in
+                    | reprehenderit in voluptate velit esse cillum dolore eu
+                    | fugiat nulla pariatur.
+                  a(href="#").post__full-text-link continue reading...
+                .posts-list__item.post
+                  img(src="img/post-image-1.png" alt="post").post__image
+                  p.post__date ocotber 13, 2015
+                  p.post__preview-text Lorem ipsum dolor sit amet, consectetur
+                    | adipisicing elit, sed do eiusmod tempor incididunt ut
+                    | labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    | quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    | ex ea commodo consequat. Duis aute irure dolor in
+                    | reprehenderit in voluptate velit esse cillum dolore eu
+                    | fugiat nulla pariatur.
+                  a(href="#").post__full-text-link continue reading...
+            .col-md-3.col-md-offset-1
+              .blog__nav.blog-nav
+                .blog-nav__search.search-form
+                  form
+                    input(type="text" placeholder="search...").search-form__field
+                    button.search-form__button go
+                .blog-nav__posts.little-posts
+                  h6.little-posts__title posts
+                  ul.little-posts__categories
+                    li.active: a(href="#") latest
+                    li: a(href="#") popular
+                    li: a(href="#") comments
+                  a(href="#").little-posts__item.little-post
+                    .thumb
+                      img(src="img/little-post-1.png" alt="little-post").little-post__image
+                    h6.little-post__title magna molis ultricies
+                    p.little-post__date 3th oct 2012
+                  a(href="#").little-posts__item.little-post
+                    .thumb
+                      img(src="img/little-post-2.png" alt="little-post").little-post__image
+                    h6.little-post__title magna molis ultricies
+                    p.little-post__date 3th oct 2012
+                  a(href="#").little-posts__item.little-post
+                    .thumb
+                      img(src="img/little-post-3.png" alt="little-post").little-post__image
+                    h6.little-post__title magna molis ultricies
+                    p.little-post__date 3th oct 2012
+                .blog-nav__categories.blog-nav-categories
+                  h6.blog-nav-categories__title categories
+                  .blog-nav-categories__item
+                    p business
+                    p 15
+                  .blog-nav-categories__item
+                    p photography
+                    p 17
+                  .blog-nav-categories__item
+                    p journal
+                    p 22
+                  .blog-nav-categories__item
+                    p web development
+                    p 30
+                .blog-nav__tags.tags
+                  h6.tags__title tags
+                  p.tags__item css
+                  p.tags__item javascript
+                  p.tags__item jquery
+                  p.tags__item html5
+                  p.tags__item bootstrap
+                  p.tags__item css
+                  p.tags__item javascript
+                  p.tags__item jquery
+                .blog-nav__archive.blog-nav-archive
+                  h6.blog-nav-archive__title archives
+                  .blog-nav-archive__item
+                    p business
+                    p 15
+                  .blog-nav-archive__item
+                    p photography
+                    p 17
+                  .blog-nav-archive__item
+                    p journal
+                    p 22
+                  .blog-nav-archive__item
+                    p web development
+                    p 30
+      //- INCLUDE FOOTER
+      include pug/footer.pug

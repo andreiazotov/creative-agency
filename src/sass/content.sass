@@ -495,3 +495,140 @@
     padding: 10px 20px
     text-decoration: none
 /* SERVICES PAGE STYLES END */
+
+/* BLOG PAGES STYLES START */
+.blog
+  padding: 150px 0
+
+.post
+  &__image
+    width: 100%
+  &:not(:last-child)
+    margin-bottom: 100px
+  &__date
+    text-transform: uppercase
+    color: #fff
+    padding: 5px 23px 3px 15px
+    background-color: $secondary-color
+    display: inline-block
+    font-weight: 700
+    font-size: em(14)
+    margin-top: 23px
+  &__title
+    margin-top: 13px
+    font-size: em(18)
+    font-weight: 700
+    text-transform: uppercase
+  &__preview-text
+    margin-top: 15px
+    font-family: $font-light
+    font-size: em(15)
+  &__full-text-link
+    text-transform: uppercase
+    font-size: em(14)
+    text-decoration: none
+    color: $primary-color
+    margin-top: 23px
+    display: inline-block
+
+.blog-nav
+  .search-form
+    &__field,
+    &__button
+      opacity: 0.5
+      font-weight: 700
+      font-size: em(12)
+      text-transform: uppercase
+      box-sizing: border-box
+      border: 0
+      background-color: #ececec
+      padding: 8px 0 6px 15px
+      width: 80%
+      display: inline-block
+    &__button
+      border-left: 2px solid #999
+      padding: 8px 15px 6px 15px
+      width: 20%
+
+  .little-posts
+    margin-top: 40px
+    text-transform: uppercase
+    font-size: em(14)
+    font-weight: 700
+    &__categories
+      margin-bottom: 20px
+      li
+        display: inline-block
+        padding: 10px 17px
+        border-bottom: 2px solid #cecece
+        a
+          text-decoration: none
+          color: $primary-color
+          font-size: em(12)
+      li:hover,
+      li.active
+        border-bottom: 2px solid $secondary-color
+    .little-post
+      display: block
+      text-decoration: none
+      color: $primary-color
+      overflow: hidden
+      .thumb
+        float: left
+        margin-right: 10px
+      &__title
+        margin-top: 8px
+      &__date
+        font-family: $font-light
+        color: #999
+        font-size: em(12)
+
+  .blog-nav-categories,
+  .blog-nav-archive
+    margin-top: 40px
+    &__title
+      font-weight: 700
+      font-size: em(14)
+      text-transform: uppercase
+      margin-bottom: 10px
+    &__item
+      overflow: hidden
+      cursor: pointer
+      border-bottom: 1px solid #ececec
+      padding: 10px 0 12px 0
+      text-transform: capitalize
+      font-family: $font-light
+      font-size: em(15)
+      transition: 0.2s
+      p
+        box-sizing: border-box
+        padding: 0 15px
+      p:first-child
+        float: left
+      p:last-child
+        float: right
+      &:hover
+        border-color: $secondary-color
+
+  .tags
+    margin-top: 40px
+    &__title
+      font-weight: 700
+      font-size: em(14)
+      text-transform: uppercase
+      margin-bottom: 10px
+    &__item
+      text-transform: uppercase
+      font-size: em(12)
+      font-weight: 700
+      color: #999
+      background-color: #e5e5e5
+      display: inline-block
+      margin-right: 10px
+      margin-bottom: 10px
+      padding: 6px 20px
+      cursor: pointer
+      transition: 0.4s
+      &:hover
+        background-color: $secondary-color
+/* BLOG PAGES STYLES END */
