@@ -42,6 +42,17 @@
         li
           padding: 10px 8px
 
+  .bar
+    text-align: center
+    .item
+      &__text,
+      &__special
+        float: none
+        line-height: 25px
+      &__special
+        display: inline-block
+        margin-top: 20px
+
 @media screen and (max-width: 991px)
   .top-menu
     display: none
@@ -91,6 +102,15 @@
     .search-form
       margin-top: 100px
 
+  .clients
+    margin-top: 50px
+
+@media screen and (max-width: 767px)
+  .team-list
+    .item
+      &__photo
+        width: 50%
+
 @media screen and (max-width: 560px)
   .advantages
     &__image
@@ -127,7 +147,10 @@
   .newsletter-form
     &__field
       width: 100%
-
+  .team-list
+    .item
+      &__photo
+        width: 100%
 
 @media screen and (max-width: 370px)
   .agency-history

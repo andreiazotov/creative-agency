@@ -1,0 +1,198 @@
+doctype html
+html(lang='en')
+  //- INCLUDE HEAD
+  include pug/head.pug
+  body
+    .page-wrapper
+      //- INCLUDE HEADER
+      include pug/header.pug
+      section.top
+        h2.top__heading about us
+        p.top__text home / about
+      section.about
+        .container
+          .row
+            .col-md-6
+              .about__description.about-description
+                h3.about-description__title about us
+                p.about-description__subtitle we are awesome
+                p.about-description__text Lorem ipsum dolor sit amet, consectetuer
+                  | adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                  | laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                  | minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                  | lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
+                  | vel eum iriure dolor in hendrerit in vulputate velit esse
+                  | molestie consequat, vel illum dolore eu feugiat nulla facilisis
+                  | at vero eros et accumsan et iusto odio dignissim qui blandit
+                  | praesent luptatum zzril delenit augue duis dolore te feugait
+                  | nulla facilisi.
+            .col-md-6
+              .about__description.about-description
+                h3.about-description__title what we do
+                p.about-description__subtitle creative and digital
+                p.about-description__text Lorem ipsum dolor sit amet, consectetuer
+                  | adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                  | laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                  | minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                  | lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
+                  | vel eum iriure dolor in hendrerit in vulputate velit esse
+                  | molestie consequat, vel illum dolore eu feugiat nulla facilisis
+                  | at vero eros et accumsan et iusto odio dignissim qui blandit
+                  | praesent luptatum zzril delenit augue duis dolore te feugait
+                  | nulla facilisi.
+      section.benefits
+        div: h2.benefits__title some benefits
+        div: p.benefits__description Lorem ipsum dolor sit amet, consectetur
+          | adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          | dolore magna aliqua.
+        .container.benefits__list.benefits-list
+          .row
+            .col-md-4
+              .benefits-list__item.item
+                h4.item__title fully responsive
+                p.item__description Cum sociis natoque penatibus et magnis dis
+                  | parturient montes, nascetur ridiculus mus. In eleifend
+                  | suscipit enim, eu commodo neque molestie vitae.
+            .col-md-4
+              .benefits-list__item.item
+                h4.item__title unlimited options
+                p.item__description Cum sociis natoque penatibus et magnis dis
+                  | parturient montes, nascetur ridiculus mus. In eleifend
+                  | suscipit enim, eu commodo neque molestie vitae.
+            .col-md-4
+              .benefits-list__item.item
+                h4.item__title wordpress
+                p.item__description Cum sociis natoque penatibus et magnis dis
+                  | parturient montes, nascetur ridiculus mus. In eleifend
+                  | suscipit enim, eu commodo neque molestie vitae.
+            .col-md-4
+              .benefits-list__item.item
+                h4.item__title e-commerce
+                p.item__description Cum sociis natoque penatibus et magnis dis
+                  | parturient montes, nascetur ridiculus mus. In eleifend
+                  | suscipit enim, eu commodo neque molestie vitae.
+            .col-md-4
+              .benefits-list__item.item
+                h4.item__title customizable design
+                p.item__description Cum sociis natoque penatibus et magnis dis
+                  | parturient montes, nascetur ridiculus mus. In eleifend
+                  | suscipit enim, eu commodo neque molestie vitae.
+            .col-md-4
+              .benefits-list__item.item
+                h4.item__title support
+                p.item__description Cum sociis natoque penatibus et magnis dis
+                  | parturient montes, nascetur ridiculus mus. In eleifend
+                  | suscipit enim, eu commodo neque molestie vitae.
+      section.team
+        div: h2.team__title the dream team
+        div: p.team__description Lorem ipsum dolor sit amet, consectetur adipisicing
+          | elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .container.team__list.team-list
+          .row
+            .col-md-3.col-sm-3
+              .team-list__item.item
+                img(src="img/member-1.png" alt="team member").item__photo
+                .item__description
+                  p john doe
+                  p ceo / co-founder
+            .col-md-3.col-sm-3
+              .team-list__item.item
+                img(src="img/member-2.png" alt="team member").item__photo
+                .item__description
+                  p jennifer toms
+                  p co-founder
+            .col-md-3.col-sm-3
+              .team-list__item.item
+                img(src="img/member-3.png" alt="team member").item__photo
+                .item__description
+                  p john doe
+                  p designer
+            .col-md-3.col-sm-3
+              .team-list__item.item
+                img(src="img/member-4.png" alt="team member").item__photo
+                .item__description
+                  p carry parsons
+                  p cto
+            .col-md-3.col-sm-3
+              .team-list__item.item
+                img(src="img/member-5.png" alt="team member").item__photo
+                .item__description
+                  p john doe
+                  p frontend
+            .col-md-3.col-sm-3
+              .team-list__item.item
+                img(src="img/member-6.png" alt="team member").item__photo
+                .item__description
+                  p john doe
+                  p backend
+            .col-md-3.col-sm-3
+              .team-list__item.item
+                img(src="img/member-7.png" alt="team member").item__photo
+                .item__description
+                  p cristoph lane
+                  p architect
+            .col-md-3.col-sm-3
+              .team-list__item.item
+                img(src="img/member-8.png" alt="team member").item__photo
+                .item__description
+                  p jack burridge
+                  p manager
+      section.bar
+        .container
+          .bar__item.item
+            p.item__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              | nonummy nibh euismod
+            a(href="#").item__special read more
+      section.feedback
+        .container
+          .row
+            .col-md-6
+              .feedback__testimonials.testimonials
+                .testimonials__item.item.item__active
+                  img(src="img/client-1.png").item__photo
+                  p.item__review Quisque iaculis lorem vestibulum eros vehicula,
+                    | non congue elit dictum. Donec mollis aliquet lorem, eu
+                    | porttitor sapien semper in. Duis ac erat luctus, gravida
+                    | lectus sit amet, consectetur orci. Suspendisse libero mauris.
+                  p.item__name victor moses
+                .testimonials__item.item
+                  img(src="img/client-1.png").item__photo
+                  p.item__review Quisque iaculis lorem vestibulum eros vehicula,
+                    | non congue elit dictum. Donec mollis aliquet lorem, eu
+                    | porttitor sapien semper in. Duis ac erat luctus, gravida
+                    | lectus sit amet, consectetur orci. Suspendisse libero mauris.
+                  p.item__name victor moses
+                .testimonials__item.item
+                  img(src="img/client-1.png").item__photo
+                  p.item__review Quisque iaculis lorem vestibulum eros vehicula,
+                    | non congue elit dictum. Donec mollis aliquet lorem, eu
+                    | porttitor sapien semper in. Duis ac erat luctus, gravida
+                    | lectus sit amet, consectetur orci. Suspendisse libero mauris.
+                  p.item__name victor moses
+                ul.testimonials__nav
+                  li.active
+                  li
+                  li
+                  li
+            .col-md-6
+              .row.feedback__clients.clients
+                .col-md-4
+                  .img-wrapper
+                    img(src="img/clients-logo-1.png" alt="clients-logo").clients__item
+                .col-md-4
+                  .img-wrapper
+                    img(src="img/clients-logo-2.png" alt="clients-logo").clients__item
+                .col-md-4
+                  .img-wrapper
+                    img(src="img/clients-logo-3.png" alt="clients-logo").clients__item
+                .col-md-4
+                  .img-wrapper
+                    img(src="img/clients-logo-4.png" alt="clients-logo").clients__item
+                .col-md-4
+                  .img-wrapper
+                    img(src="img/clients-logo-5.png" alt="clients-logo").clients__item
+                .col-md-4
+                  .img-wrapper
+                    img(src="img/clients-logo-6.png" alt="clients-logo").clients__item
+      //- INCLUDE FOOTER
+      include pug/footer.pug

@@ -632,3 +632,234 @@
       &:hover
         background-color: $secondary-color
 /* BLOG PAGES STYLES END */
+
+/* ABOUT PAGE STYLES START */
+.about
+  padding: 121px 0 137px
+
+.about-description
+  &__title
+    font-size: em(30)
+    text-transform: uppercase
+    font-weight: 700
+    margin-top: 17px
+    position: relative
+    z-index: 1
+    &::before
+      position: absolute
+      content: ""
+      width: 67px
+      height: 21px
+      background-color: $secondary-color
+      left: 0
+      top: 22px
+      z-index: -1
+  &__subtitle
+    margin-top: 18px
+    font-size: em(14)
+    font-weight: 700
+    text-transform: uppercase
+  &__text
+    margin-top: 15px
+    font-family: $font-light
+    font-size: em(14)
+    line-height: 30px
+
+.benefits
+  text-align: center
+  &__title
+    display: inline-block
+    font-size: em(30)
+    text-transform: uppercase
+    font-weight: 700
+    margin-top: 17px
+    position: relative
+    z-index: 1
+    &::before
+      position: absolute
+      content: ""
+      width: 67px
+      height: 21px
+      background-color: $secondary-color
+      left: 2px
+      top: 22px
+      z-index: -1
+  &__description
+    font-family: $font-light
+    font-size: em(15)
+    margin-top: 7px
+    max-width: 717px
+    display: inline-block
+    margin-bottom: 93px
+
+.benefits__list
+  .item
+    text-align: left
+    margin-bottom: 53px
+    &__title
+      font-size: em(18)
+      text-transform: uppercase
+      font-weight: 700
+      padding-left: 60px
+      position: relative
+      &::before
+        position: absolute
+        content: ""
+        width: 40px
+        height: 40px
+        background: $secondary-color url(../img/about-icons.png) no-repeat 0 0
+        left: 0
+        top: -8px
+    &__description
+      font-family: $font-light
+      font-size: em(15)
+      margin-top: 7px
+  .col-md-4:nth-child(1)
+    .item
+      &__title::before
+        background-position: 8px 8px
+  .col-md-4:nth-child(2)
+    .item
+      &__title::before
+        background-position: -380px 9px
+  .col-md-4:nth-child(3)
+    .item
+      &__title::before
+        background-position: -773px 8px
+  .col-md-4:nth-child(4)
+    .item
+      &__title::before
+        background-position: 8px -178px
+  .col-md-4:nth-child(5)
+    .item
+      &__title::before
+        background-position: -380px -178px
+  .col-md-4:nth-child(6)
+    .item
+      &__title::before
+        background-position: -773px -178px
+
+.team
+  margin-top: 60px
+  text-align: center
+  &__title
+    display: inline-block
+    font-size: em(30)
+    text-transform: uppercase
+    font-weight: 700
+    margin-top: 17px
+    position: relative
+    z-index: 1
+    &::before
+      position: absolute
+      content: ""
+      width: 67px
+      height: 21px
+      background-color: $secondary-color
+      left: 2px
+      top: 22px
+      z-index: -1
+  &__description
+    font-family: $font-light
+    font-size: em(15)
+    margin-top: 7px
+    max-width: 717px
+    display: inline-block
+    margin-bottom: 96px
+
+.team-list
+  .item
+    position: relative
+    margin-bottom: 21px
+    &__photo
+      width: 100%
+    &__description
+      position: absolute
+      left: 0
+      top: 0
+      height: 100%
+      width: 100%
+      box-sizing: border-box
+      padding-top: 130px
+
+.bar
+  .item
+    box-sizing: border-box
+    overflow: hidden
+    padding: 50px 30px
+    background-color: rgba(96, 96, 110, 0.1)
+    &__text
+      float: left
+      font-style: italic
+      font-family: $font-light
+      line-height: 49px
+    &__special
+      float: right
+      background-color: $secondary-color
+      color: #fff
+      padding: 15px 40px 12px
+      text-transform: uppercase
+      font-size: em(14)
+      text-decoration: none
+
+.feedback
+  padding: 150px 0
+
+.testimonials
+  .item
+    display: none
+    text-align: center
+    &__photo
+      border-radius: 50%
+      border: 1px solid #e5e5e5
+      width: 82px
+      height: 82px
+    &__review
+      font-family: $font-light
+      font-size: em(14)
+      line-height: 30px
+      margin-top: 7px
+    &__name
+      background-color: $secondary-color
+      color: #fff
+      padding: 6px 10px 6px
+      text-transform: uppercase
+      font-size: em(14)
+      font-weight: 700
+      display: inline-block
+      margin-top: 20px
+  .item__active
+    display: block
+  &__nav
+    margin-top: 14px
+    text-align: center
+    li
+      cursor: pointer
+      display: inline-block
+      width: 15px
+      height: 5px
+      background-color: $primary-color
+      transition: 0.4s
+      &:not(:last-child)
+        margin-right: 5px
+    li.active,
+    li:hover
+      background-color: $secondary-color
+      width: 30px
+
+.clients
+  .img-wrapper
+    margin-bottom: 30px
+    position: relative
+    border: 1px solid rgba(0, 0, 0, 0.15)
+    height: 100px
+    .clients__item
+      max-width: 100%
+      max-height: 100%
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+/* ABOUT PAGE STYLES END */
