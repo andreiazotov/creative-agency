@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+  //- INCLUDE HEAD
+  include pug/head.pug
+  body
+    .page-wrapper
+      //- INCLUDE HEADER
+      include pug/header.pug
+      section.top
+        h2.top__heading contact us
+        p.top__text home / contact
+      section.contact
+        .container
+          .row
+            .col-md-6
+              form.contact__form.contact-form
+                input(type="text" placeholder="your name").contact-form__field.contact-form__field_name
+                input(type="text" placeholder="your email").contact-form__field.contact-form__field_email
+                input(type="text" placeholder="object").contact-form__field.contact-form__field_object
+                textarea(placeholder="message").contact-form__textarea
+                button.contact-form__submit send
+              .contact__info.contact-info
+                h4.contact-info__title contact info
+                p.contact-info__text Lorem ipsum dolor sit amet, conse
+                  | adipisicing elit. Libero incidunt quod ab mollitia
+                  | quia dolorum conse.
+                p.contact-info__address 13D, Functional apartment, Unique colony
+                p.contact-info__address Agadir 86360
+                p.contact-info__phone +212 124-566-780
+                p.contact-info__phone +212 124-566-780
+                a(href="#").contact-info__email mail@website.com
+            .col-md-6
+              .contact__map
+                img(src="img/map.png" alt="map" style="width: 100%")
+      //- INCLUDE FOOTER
+      include pug/footer.pug
