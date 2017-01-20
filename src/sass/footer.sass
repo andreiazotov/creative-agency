@@ -8,8 +8,12 @@
       text-transform: uppercase
       font-size: em(13)
       color: #9a9a9a
+      border-bottom: 1px solid transparent
+      transition: 0.4s
       &:not(:last-child)
         margin-right: 40px
+      &:hover
+        border-bottom: 1px solid #9a9a9a
 
 .copyrights
   text-decoration: none
@@ -25,8 +29,11 @@
       height: 16px
       width: 20px
       background: url(../img/social-icons.png) no-repeat 0 0
+      transition: 0.4s
       &:not(:last-child)
         margin-right: 10px
+      &:hover
+        transform: rotate(360deg)
     .fb
       background-position: 0 0
       width: 8px
